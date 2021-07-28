@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BD8C61;
+}
+
+header {
+    background: #84563C;
+    padding: 20px;
+}
+ header > h1 {
+     color:  #D4AF36;
+     text-align: center;
+     font-family: sans-serif;
+ }
+
+ .score-board {
+     color: #95C5A3;
+     border: 3px solid #E3E3E3;
+     width: 220px;
+     margin: 20px auto;
+     text-align: center;
+     font-size: 40px;
+     padding: 15px 20px;
+     font-family: sans-serif;
+     position: relative;
+ }
+
+ .badge {
+     background-color: #76303D;
+     font-size: 20px;
+     padding: 5px 10px;
+     
+ }
+ 
+ #user-side {
+     position: absolute;
+     top: 25px;
+     left: -25px;
+ }
+
+ #comp-side {
+     position: absolute;
+     top: 25px;
+     right: -50px;
+ }
+
+ .result {
+     color: #492201;
+     font-size: 50px;
+ }
+ .result > p {
+     font-family: sans-serif;
+     text-align: center;
+     font-weight: bold;       
+ }
+
+ .choices {
+     text-align: center;
+     margin: 50px;
+ }
+
+ /*display inline, cannot define height  or width where it is fixed. 
+ -display block , you can define height and width but it always start on a new line
+ -display inline block, height and width can be define and it does not start on a new line
+ -display flex, always has a parent element or a container.
+ */
+
+ .choice {
+     background-color: #E0D6A7;
+     display: inline-block;
+     border: 5px solid black;
+     border-radius: 10%;
+     padding: 10px 5px;
+     margin: 0 25px;
+     transition: all 0.3s ease;
+ }
+
+ .choice:hover {
+     cursor: pointer;
+     background: #96A563;
+ }
+ 
+ #preparation {
+     text-align: center;
+     color: #492201;
+     font-size: 40px;
+     font-weight: bold;
+     font-family: sans-serif;
+ }
